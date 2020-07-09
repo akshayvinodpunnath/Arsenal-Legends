@@ -1,1 +1,26 @@
-<p>display-legend works!</p>
+<div class="row col-12">
+    <div class="col-5">
+        <table class="table">
+            <thead>
+                <th scope="col" class="text-center h4"><strong>{{ legend.name }}</strong></th>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row"><img src="{{ legend.image }}" class="img-thumbnail img-thumbnail-sm" /></th>
+                </tr>
+                <tr>
+                    <th scope="row">Postition: {{ legend.position }}</th>
+                </tr>
+                <tr>
+                    <th scope="row">Appearances: {{ legend.appearances }}</th>
+                </tr>
+                <tr>
+                    <th scope="row">Goals: {{ legend.goals }}</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-7">
+        <p><em>{{ legend.bio }}</em></p>
+    </div>
+</div>
